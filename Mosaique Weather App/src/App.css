@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: auto;
+  width: 100%;
+}
+
+/* APP HEADER  */
+.appHeader {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #faf6f6;
+}
+
+/* LOGO  */
+.headerLogo {
+  width: 40px;
+  height: 40px;
+  margin: 19px 0px 19px 19px;
+}
+
+/* MENU ICON AND DIV  */
+.menuBarIconDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.menuBarIcon {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.homeMenu {
+  position: absolute;
+  margin: 80px 18px 0px 0px;
+  background-color: #ffffff;
+  padding: 10px 65px 15px 10px;
+}
+
+/* HOME IMAGE  */
+.homeImage {
+  width: 100%;
+}
+
+/* MAIN HEADING  */
+.mainHeading {
+  margin: 42px 0px 0px 16px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CHECKBOX AND INPUT FEILD  */
+.CheckBoxForm {
+  display: flex;
+  margin: 42px 0px 0px 16px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  width: 15px;
+  height: 15px;
+}
+
+label {
+  padding: 10px;
+}
+
+/* MAIN CONTAINER  */
+.mainContainer {
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+/* WEATHER DIV  */
+.parts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 170px;
+  padding: 10px;
+  background-color: #fafafa;
+  margin: 20px 20px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: grab;
+}
+
+/* WEATHER IMAGE  */
+.weatherIconImage {
+  width: 30px;
+  height: 30px;
+}
+
+/* TEXT  */
+.weatherInfoText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+/* INFO TEXT  */
+.infoText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #16642c;
+  font-weight: 800;
+}
+
+/* APP FOOTER  */
+.appFooter {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-color: #faf6f6;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FOR MOBILE VIEW */
+@media (min-width: 320px) and (max-width: 480px) {
+  .headerLogo {
+    margin: 10px 0px 10px 19px;
+  }
+
+  .mainHeading {
+    margin: 20px 0px 0px 16px;
+    font-size: 14px;
+  }
+
+  .CheckBoxForm {
+    margin: 20px 0px 0px 16px;
+    font-size: 12px;
+  }
+
+  .mainContainer {
+    margin: 20px;
+  }
+
+  .appFooter {
+    display: none;
+  }
+}
